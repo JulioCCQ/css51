@@ -1,0 +1,270 @@
+/* Selector universal */
+/* * {
+    border: 1px dotted blue;
+} */
+
+/* Selector de tipo */
+/* h2 {
+    text-align: center;
+} */
+
+/* Selector por ID */
+/* #subtitulo{
+    background-color: grey;
+} */
+
+/* Selector de clase (cada clase puede tener varias clases dentro de una)*/
+/* .rojo{
+    color: red;
+}
+.verde{
+    color: green;
+}
+.borde {
+    border: 2px solid black;
+} */
+
+/* Selector de clase de un tag en particular */
+/* h2.rojo{
+    color: red;
+    border: 1px solid red;
+} */
+
+/* Selectores por atributo */
+/* p[lang] {
+    border: 1px solid blue;
+}
+p[class] {
+    border: 1px solid rgb(0, 255, 64);
+} */
+
+/* p[lang= en] {
+    border: 1px solid blue;
+}
+h2[class~=rojo] {
+    border: 1px solid rgb(0, 255, 64);
+}
+a[href="#"]{
+    background-color: cadetblue;
+}
+a[href$="com"]{
+    background-color: yellowgreen;
+}
+a[href*="."]{
+    background-color: red;
+} */
+
+/* Selector de lista */
+
+/* h2, p, ul {
+    background-color: aqua;
+} */
+
+/* Si no existre la etiqueta dentro del codigo html no se aplicara el estilo */
+/* h2.rojo {
+    color: red;
+} */
+
+/* Selector de descendientes */
+/* header ul{
+    background-color: red;
+}
+aside ul{
+    background-color: red;
+} */
+
+/* Selector hijos directos */
+/* section > p {
+    background-color: blue;
+} */
+
+/* Selector hermano general */
+/* h1 ~ p{
+    background-color: blue;
+} */
+
+/* Selector de hermano adyacente */
+/* h1 + p{
+    background-color: blue;
+} */
+
+/* p {
+    background-color: darkolivegreen;
+}
+p.parrafo {
+    background-color: rgb(63, 47, 107);
+} */
+
+
+/* Modelo de caja */
+
+/* h1 {
+    background-color: aqua;
+    Padding 
+    padding: 10px;
+    padding: 20px 150px;
+    padding: 0px 40px 50px;
+    padding: 10px 20px 30px 40px;
+    Border 
+    Un border tiene grosor, color y estilo
+    border: 5px double coral;
+    para quitar el borde
+    border: 0;
+    border-bottom: 5px dotted crimson;
+    border-left: 10px solid palevioletred;
+    border-right: 10px solid palevioletred;
+    border-top: 5px dashed coral;
+    Se redondean las esquinas
+    border-radius: 15px;
+    margin
+    margin: 10px;
+    margin: 10px 30px;
+    margin: 10px 50px 15px;
+    margin: 10px 20px 30px 40px;
+    margin: 0;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+} */
+
+/* box-sizing (content box)
+h1{
+    box-sizing: border-box;
+    background-color: aquamarine;
+    padding: 10px;
+    border: 5px double cadetblue;
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+}       
+img.small {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+} */
+
+/* Cambia el tamaño */
+/* article{
+    font-size: 10px;
+} */
+
+/* h1{
+    font-size: 100px;
+    background-color: aquamarine;
+    width: 50%;
+} */
+
+/* .primer-parrafo{
+    background-color: aquamarine;
+    width: 100px;
+    height: 400px;
+}
+.primer-parrafo img{
+    width: 100%;
+} */
+
+/* eliminar estilos por default */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after{
+    clear: both;
+    content: "";
+    display: table;
+}
+
+h1,h2{
+    margin: 1em 0;
+}
+
+body{
+    width: 95% ;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Estilos para encabezado */
+header img{
+    width: 100%;
+}
+
+header a{
+    display: block;
+}
+
+header nav a:link , header nav a:visited{
+    background-color: deeppink;
+    color: white;
+    font-weight: bold;
+    padding: 0.5em;
+}
+
+header nav a:hover , header nav a:active{
+    background-color: rgb(95, 55, 77);
+    color: white;
+    font-weight: bold;
+    padding: 0.5em;
+}
+
+img{
+    width: 100%;
+}
+
+header ul{
+    list-style: none;
+    text-align: center;
+}
+
+header ul li{
+    float: left ;
+    width: 25%;
+}
+
+/* main */
+main > article img{
+    width: 200px;
+    float: right;
+    margin: 0.5em;
+}
+
+#flotar-der{
+    float: right;
+}
+
+main ul{
+    margin-left: 2em;
+}
+
+main ol{
+    margin-left: 2em;
+}
+
+main{
+    width: 80%;
+    float: left;
+}
+
+/* Aside */
+aside{
+    width: 20%;
+    float: left;
+    padding:0 2em;
+}
+
+/* Footer */
+footer{
+    text-align: center;
+    clear: both;
+    background-color: gray;
+}
+
+
+
